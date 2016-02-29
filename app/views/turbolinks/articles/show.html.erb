@@ -1,0 +1,19 @@
+<%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
+
+<div>
+  <div style="display:inline-block;vertical-align:top;width:20%">
+    <% articles.each do |article| %>
+      <div>
+        <%= link_to article.title, turbolinks_article_path(article.id) %>
+      </div>
+    <% end %>
+  </div>
+  <div style="display:inline-block;vertical-align:top;width:79%">
+    <article>
+      <h1><%= @article.title %></h1>
+      <% @article.body.each do |paragraph| %>
+        <p><%= paragraph %></p>
+      <% end %>
+    </article>
+  </div>
+</div>

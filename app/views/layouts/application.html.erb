@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TurbolinksVsClearwater</title>
+    <%= csrf_meta_tags %>
+    <%= action_cable_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><%= link_to 'Clearwater', '/clearwater/articles', 'data-no-turbolink' => true %></li>
+        <li><%= link_to 'Turbolinks', '/turbolinks/articles', 'data-no-turbolink' => true %></li>
+      </ul>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
