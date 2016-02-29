@@ -1,24 +1,7 @@
-## README
+# Turbolinks vs Clearwater
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Check the demo](https://turbolinks-vs-clearwater.herokuapp.com)
 
-Things you may want to cover:
+This project was created to confirm or deny claims that Turbolinks is faster than a virtual DOM and therefore better to use for old/low-performance clients. Turns out, Turbolinks performance is an order of magnitude worse than Clearwater on a realistic number of DOM elements when only a small number of those change.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Granted, a 4k-article blog is not a realistic app, but it does represent a realistic number of DOM changes between two renders.
