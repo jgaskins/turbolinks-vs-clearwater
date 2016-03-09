@@ -11,8 +11,8 @@
   <body>
     <nav>
       <ul>
-        <li><%= link_to 'Clearwater', '/clearwater/articles', 'data-no-turbolink' => true %></li>
-        <li><%= link_to 'Turbolinks', '/turbolinks/articles', 'data-no-turbolink' => true %></li>
+        <li><%= link_to 'Clearwater', '/clearwater/articles', 'data-turbolinks' => false %></li>
+        <li><%= link_to 'Turbolinks', '/turbolinks/articles', 'data-turbolinks' => false %></li>
       </ul>
     </nav>
     <%= yield %>
